@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     getApi () {
-        this.axios.get('http://139.196.142.32:8080/CovidData/worldAddConfirm_data').then( res => {
+        this.axios.get('http://110.42.237.123:8080/CovidData/worldAddConfirm_data').then( res => {
           this.name=res.data.map(((item) => item.name))
           this.addConfirmCount=res.data.map(((item) => item.addConfirmCount))
           this.death=res.data.map(((item) => item.death))

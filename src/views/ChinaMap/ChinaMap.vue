@@ -143,7 +143,7 @@ export default {
     },
     drawChart() {
       //this.axios.get("http://localhost:8080/res/test.json").then((res) => {
-      this.axios.get("http://139.196.142.32:8080/CovidData/province_data").then((res) => {
+      this.axios.get("http://110.42.237.123:8080/CovidData/province_data").then((res) => {
         var that = this;
         var provinceShortName = res.data.map((item) => item.provinceShortName);
         var confirmedCount = res.data.map((item) => item.confirmedCount);

@@ -48,7 +48,7 @@ export default {
       this.rotate();
       setTimeout(() => {
         this.showSwitch = false;
-      }, 0);
+      }, 500);
     },
     rotate () {
       this.rotation.z += 0.01;

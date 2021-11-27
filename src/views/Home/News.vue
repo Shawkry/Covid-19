@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     getApi () {
-      this.axios.get('http://139.196.142.32:8080/CovidData/news_data').then(res =>{
+      this.axios.get('http://110.42.237.123:8080/CovidData/news_data').then(res =>{
         this.newsData = res.data
       }).catch( err => {
 

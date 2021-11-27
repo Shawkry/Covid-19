@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       "/usc": {
-        target: "http://139.196.142.32:8080/CovidData/",
+        target: "http://110.42.237.123:8080/CovidData/",
         changeOrigin: true,
         pathRewrite: {
           '^/usc': ''

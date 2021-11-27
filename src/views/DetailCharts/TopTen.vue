@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     getApi () {
-      this.axios.get('http://139.196.142.32:8080/CovidData/provinceTop10_data').then( res => {
+      this.axios.get('http://110.42.237.123:8080/CovidData/provinceTop10_data').then( res => {
         // 获取top10省份名称
         for (let i=9;i>=0;i--) {
           this.provinceNames.push(res.data[i].provinceName)

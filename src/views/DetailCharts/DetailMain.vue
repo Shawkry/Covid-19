@@ -31,7 +31,7 @@ export default {
   mounted() {
     this.getApi()
 
-  },
+   /},
   methods: {
     getApi() {
       this.axios.get('/usc/top10_data').then(res => {

@@ -125,7 +125,7 @@ export default {
       this.$router.push('/')
     },
     getHdData () {
-      this.axios.get('http://139.196.142.32:8080/CovidData/ChinaTotal_data').then((result) => {
+      this.axios.get('http://110.42.237.123:8080/CovidData/ChinaTotal_data').then((result) => {
         this.hdData = result.data
       }).catch((err) => {
         console.log('获取请求失败！');

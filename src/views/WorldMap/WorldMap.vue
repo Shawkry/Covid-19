@@ -25,7 +25,7 @@ export default {
     },
     getApi() {
       this.axios
-        .get("http://139.196.142.32:8080/CovidData/worldTop10_data")
+        .get("http://110.42.237.123:8080/CovidData/worldTop10_data")
         .then((res) => {
           this.top10 = res.data;
           this.drawChart();
@@ -38,7 +38,7 @@ export default {
     drawChart() {
       //this.axios.get("http://localhost:8080/res/test.json").then((res) => {
       this.axios
-        .get("http://139.196.142.32:8080/CovidData/world_data")
+        .get("http://110.42.237.123:8080/CovidData/world_data")
         .then((res) => {
           var that = this;
           let myEcharts = this.$echarts.init(this.$refs.WorldMap_ref);

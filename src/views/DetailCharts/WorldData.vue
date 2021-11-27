@@ -19,7 +19,7 @@ export default {
     // },
     drawChart() {
       let myEcharts = this.$echarts.init(this.$refs.top_ref);
-      this.axios.get("http://139.196.142.32:8080/CovidData/world_total_data").then((res) => {
+      this.axios.get("http://110.42.237.123:8080/CovidData/world_total_data").then((res) => {
         var date = res.data.map((item) => item.date);
         date.pop()
         var addConfirm = res.data.map((item) => item.addConfirm);

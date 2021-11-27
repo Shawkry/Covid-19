@@ -34,7 +34,7 @@ export default {
     drawChart() {
       var that = this;
       this.axios
-        .get("http://139.196.142.32:8080/CovidData/currentConfirmCount_data")
+        .get("http://110.42.237.123:8080/CovidData/currentConfirmCount_data")
         .then((res) => {
           let myEcharts = this.$echarts.init(this.$refs.Timeline_ref);
           let mockData = res.data;

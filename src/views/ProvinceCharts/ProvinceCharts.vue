@@ -25,22 +25,23 @@ export default {
       province: "海南",
       provinceindex: 8,
       pDate: [], //日期
-      pAddConfirmCount: [], //各省新增确诊人数
       pTotalConfirmCount: [], //各省累计确诊人数
       pCured: [], //各省累计治愈人数
       pDeath: [], //各省死亡人数
+      pAddConfirmCount: [], //各省新增确诊人数
     };
   },
+
 
   created() {
     //this.axios.get("http://localhost:8080/res/test.json").then((res) => {
     this.axios
-      .get("http://139.196.142.32:8080/CovidData/province_data")
+      .get("http://110.42.237.123:8080/CovidData/province_data")
       .then((res) => {
         this.province = this.$route.query.province;
-        var allProvince = res.data.map((item) => item.provinceShortName);
+        const allProvince = res.data.map((item) => item.provinceShortName);
         for (let i in allProvince) {
-          if (allProvince[i] == this.province) {
+          if (allProvince[i] === this.province) {
             this.provinceindex = Number(i);
           }
         }
